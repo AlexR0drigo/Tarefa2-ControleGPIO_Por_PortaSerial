@@ -46,7 +46,8 @@ pico_enable_stdio_usb(Tarefa2-ControleGPIO_Por_PortaSerial 1)
 
 # Add the standard library to the build
 target_link_libraries(Tarefa2-ControleGPIO_Por_PortaSerial
-        pico_stdlib)
+        pico_stdlib
+        hardware_pwm)
 
 # Add the standard include files to the build
 target_include_directories(Tarefa2-ControleGPIO_Por_PortaSerial PRIVATE
