@@ -9,6 +9,7 @@
 #define BUZZER 21
 
 void acionar_buzzer();
+void desligar_todos_leds();
 
 int main() {
     // Inicializa UART
@@ -54,4 +55,11 @@ void acionar_buzzer() {
 
     pwm_set_enabled(slice_num, false); // Desliga o PWM
     printf("Buzzer acionado por 2 segundos.\n");
+}
+
+void desligar_todos_leds() {
+    gpio_put(LED_GREEN, false);
+    gpio_put(LED_BLUE, false);
+    gpio_put(LED_RED, false);
+    printf("Todos os LEDs desligados.\n");
 }
