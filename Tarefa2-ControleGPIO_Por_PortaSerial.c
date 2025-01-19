@@ -34,6 +34,21 @@ int main() {
 
     printf("Sistema iniciado. Aguardando comandos via UART...\n");
 
+    while (true){
+
+        int ch = get_char_timeout(1000000); //aguarda a entrada por 1 segundo
+
+        //verifica se houve entrada dentro do tempo limite 
+        if (ch != PICO_ERROR_TIMEOUT){
+
+          processar_comando((char)ch);
+
+        }
+
+    }
+
+    return 0;
+
 }
 
 void acionar_buzzer() {
