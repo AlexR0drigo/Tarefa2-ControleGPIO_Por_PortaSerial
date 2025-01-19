@@ -1,8 +1,21 @@
+#include <stdio.h>
+#include "pico/stdlib.h"
+#include "hardware/uart.h"
+
 // Definições dos pinos
 #define LED_GREEN 11
 #define LED_BLUE 12
 #define LED_RED 13
 #define BUZZER 21
+
+// Protótipos das funções
+void ligar_led(uint gpio);
+void desligar_todos_leds();
+void acionar_buzzer();
+void processar_comando(char comando);
+
+void acionar_buzzer();
+void desligar_todos_leds();
 
 int main() {
     // Inicializa UART
