@@ -118,3 +118,9 @@ void processar_comando(char comando) {
     }
 }
 
+// Liga um LED específico e desliga os demais
+void ligar_led(uint gpio) {
+    desligar_todos_leds();
+    gpio_put(gpio, true);
+    printf("LED ligado no GPIO %d\n", gpio);
+}
