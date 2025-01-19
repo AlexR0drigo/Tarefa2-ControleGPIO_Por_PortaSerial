@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/uart.h"
-#include "hardware/pwm.h"
 
 // Definições dos pinos
 #define LED_GREEN 11
@@ -34,6 +33,21 @@ int main() {
     gpio_put(BUZZER, false);
 
     printf("Sistema iniciado. Aguardando comandos via UART...\n");
+
+    while (true){
+
+        int ch = get_char_timeout(1000000); //aguarda a entrada por 1 segundo
+
+        //verifica se houve entrada dentro do tempo limite 
+        if (ch != PICO_ERROR_TIMEOUT){
+
+          processar_comando((char)ch);
+
+        }
+
+    }
+
+    return 0;
 
 }
 
