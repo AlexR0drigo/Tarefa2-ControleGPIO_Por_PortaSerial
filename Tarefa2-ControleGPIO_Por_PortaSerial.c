@@ -8,6 +8,12 @@
 #define LED_RED 13
 #define BUZZER 21
 
+// Protótipos das funções
+void ligar_led(uint gpio);
+void desligar_todos_leds();
+void acionar_buzzer();
+void processar_comando(char comando);
+
 void acionar_buzzer();
 void desligar_todos_leds();
 
@@ -78,3 +84,5 @@ void desligar_todos_leds() {
     gpio_put(LED_RED, false);
     printf("Todos os LEDs desligados.\n");
 }
+
+
