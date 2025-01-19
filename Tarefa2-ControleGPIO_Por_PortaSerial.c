@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/uart.h"
+#include "hardware/pwm.h"
 
 // Definições dos pinos
 #define LED_GREEN 11
