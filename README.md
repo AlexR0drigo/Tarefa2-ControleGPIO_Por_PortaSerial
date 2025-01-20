@@ -2,7 +2,7 @@
 
 # Introdução
 
-## Este projeto implementa um sistema de controle de LEDs e um buzzer utilizando um Raspberry Pi Pico W. A interação ocorre por meio da comunicação UART, permitindo o controle remoto dos LEDs e do buzzer por meio de comandos enviados pelo terminal.
+### Este projeto implementa um sistema de controle de LEDs e um buzzer utilizando um Raspberry Pi Pico W. A interação ocorre por meio da comunicação UART, permitindo o controle remoto dos LEDs e do buzzer por meio de comandos enviados pelo terminal.
 
 # Uso
 
@@ -32,25 +32,25 @@ Z: Aciona o buzzer por 2 segundos.
 
 # Link para o vídeo ensaio
 
-
+https://drive.google.com/drive/folders/1L8PFrXdCPgNFTQCX-3Q9AspSMQoiaW8p?usp=sharing
 
 # Responsáveis pelas tarefas
 
 Alex Rodrigo: Criação do repositório, gestão e revisão do projeto e README.
 
-Maria Celiane: Circuito simulado (Wokwi).
+Maria Celiane: Implementação do controle do buzzer.
 
-Péricles Alcântara: Controle dos LEDs azul e vermelho ao mesmo tempo.
+Péricles Alcântara: Função que liga um LED especifico, aplicavel a qualquer um dos 3 LEDs.
 
-Júlia Galindo: Controle do buzzer e gravação do vídeo.
+Júlia Galindo: Função que desliga todos os LEDs.
 
-Laerte Chaves: Implementação da comunicação UART.
+Laerte Chaves: Função que processa os comandos recebidos via UART
 
-Gabriel Oliveira: Implementação do controle do buzzer.
+Gabriel Oliveira: Inicialização do laço infinito que reconhece entradas UART
 
-Jeová Cosme: Integração dos LEDs com os comandos UART.
+Jeová Cosme: Declaração de funções e suporte na criação delas.
 
-Gabriel Menezes: Implementação do comportamento dos LEDs.
+Gabriel Menezes: Revisão, incialização da porta serial, circuito simulado e video.
 
 Todos os integrantes do grupo participaram ativamente na construção do código, especialmente nas reuniões via Meet. No entanto, os integrantes Naiane Santos e Victor Henrick não participaram das atividades do projeto.
 
