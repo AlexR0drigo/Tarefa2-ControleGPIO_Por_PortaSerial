@@ -70,5 +70,5 @@
     [ "r3:2", "pico:GND.4", "black", [ "v0" ] ],
     [ "buzzer:1", "pico:GND.6", "black", [ "v0" ] ]
   ],
-  "dependencies": {}
+  "dependencies":{}
 }
