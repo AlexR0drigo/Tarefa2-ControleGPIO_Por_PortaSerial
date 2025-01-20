@@ -32,6 +32,7 @@ Z: Aciona o buzzer por 2 segundos.
 
 # Link para o vídeo ensaio
 
+https://drive.google.com/drive/folders/1L8PFrXdCPgNFTQCX-3Q9AspSMQoiaW8p?usp=sharing
 
 
 # Responsáveis pelas tarefas
