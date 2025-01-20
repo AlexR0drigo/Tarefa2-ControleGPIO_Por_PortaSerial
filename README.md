@@ -1,10 +1,10 @@
-#Controle de LEDs e Buzzer via UART - Grupo 1 - Subgrupo 0
+# Controle de LEDs e Buzzer via UART - Grupo 1 - Subgrupo 0
 
-#Introdução
+# Introdução
 
-##Este projeto implementa um sistema de controle de LEDs e um buzzer utilizando um Raspberry Pi Pico W. A interação ocorre por meio da comunicação UART, permitindo o controle remoto dos LEDs e do buzzer por meio de comandos enviados pelo terminal.
+## Este projeto implementa um sistema de controle de LEDs e um buzzer utilizando um Raspberry Pi Pico W. A interação ocorre por meio da comunicação UART, permitindo o controle remoto dos LEDs e do buzzer por meio de comandos enviados pelo terminal.
 
-#Uso
+# Uso
 
 Conecte a placa de desenvolvimento BitDogLab ao computador via USB.
 
@@ -14,7 +14,7 @@ Utilize um terminal serial para enviar comandos via UART e controlar os LEDs e o
 
 O comportamento programado será executado conforme os comandos enviados.
 
-#Funcionamento
+# Funcionamento
 
 Os seguintes comandos podem ser enviados via UART para interagir com os LEDs e o buzzer:
 
@@ -30,11 +30,11 @@ O: Desliga todos os LEDs.
 
 Z: Aciona o buzzer por 2 segundos.
 
-#Link para o vídeo ensaio
+# Link para o vídeo ensaio
 
 
 
-#Responsáveis pelas tarefas
+# Responsáveis pelas tarefas
 
 Alex Rodrigo: Criação do repositório, gestão e revisão do projeto e README.
 
